@@ -1,0 +1,6 @@
+import:
+  - ~/.config/alacritty/color.yml
+  - ~/.config/alacritty/fonts.yml
+  - ~/.config/alacritty/config.yml
+  
+
