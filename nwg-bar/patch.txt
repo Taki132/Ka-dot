@@ -1,0 +1,39 @@
+diff --git a/src/config/ConfigManager.cpp b/src/config/ConfigManager.cpp
+index cf882b0c..c0f2d5c1 100644
+--- a/src/config/ConfigManager.cpp
++++ b/src/config/ConfigManager.cpp
+@@ -1693,6 +1693,9 @@ void CConfigManager::performMonitorReload() {
+     bool overAgain = false;
+ 
+     for (auto& m : g_pCompositor->m_vRealMonitors) {
++        if (!m->output)
++            continue;
++
+         auto rule = getMonitorRuleFor(m->szName, m->output->description ? m->output->description : "");
+ 
+         if (!g_pHyprRenderer->applyMonitorRule(m.get(), &rule)) {
+diff --git a/src/events/Monitors.cpp b/src/events/Monitors.cpp
+index 13de69a5..aa4d53d1 100644
+--- a/src/events/Monitors.cpp
++++ b/src/events/Monitors.cpp
+@@ -106,6 +106,10 @@ void Events::listener_monitorFrame(void* owner, void* data) {
+ 
+     if ((g_pCompositor->m_sWLRSession && !g_pCompositor->m_sWLRSession->active) || !g_pCompositor->m_bSessionActive || g_pCompositor->m_bUnsafeState) {
+         Debug::log(WARN, "Attempted to render frame on inactive session!");
++
++        if (g_pCompositor->m_bUnsafeState)
++            g_pConfigManager->performMonitorReload();
++
+         return; // cannot draw on session inactive (different tty)
+     }
+ 
+@@ -351,6 +355,8 @@ void Events::listener_monitorDestroy(void* owner, void* data) {
+ 
+     pMonitor->onDisconnect();
+ 
++    pMonitor->output = nullptr;
++
+     // cleanup if not unsafe
+     if (!g_pCompositor->m_bUnsafeState) {
+         Debug::log(LOG, "Removing monitor %s from realMonitors", pMonitor->output->name);
+         

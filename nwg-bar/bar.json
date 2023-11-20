@@ -1,0 +1,22 @@
+[
+  {
+    "label": "Sleep",
+    "exec": "systemctl suspend",
+    "icon": "/home/karuto/.config/nwg-bar/sleep-white.svg"
+  },
+  {
+    "label": "Hibernate",
+    "exec": "systemctl hibernate",
+    "icon": "/home/karuto/.config/nwg-bar/schedule_FILL0_wght400_GRAD0_opsz24.png"
+  },
+  {
+    "label": "Reboot",
+    "exec": "systemctl reboot",
+    "icon": "/home/karuto/.config/nwg-bar/reload-white.svg"
+  },
+  {
+    "label": "Shutdown",
+    "exec": "systemctl -i poweroff",
+    "icon": "/home/karuto/.config/nwg-bar/power-white.svg"
+  }
+]
