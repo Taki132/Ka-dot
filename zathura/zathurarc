@@ -1,0 +1,45 @@
+set default-bg "#293136"
+set default-fg "#d3c6aa"
+set font "Hack Nerd Font Mono 10"
+
+set statusbar-bg "#404c51"
+set statusbar-fg "#d3c6aa"
+set statusbar-basename true
+
+set inputbar-bg "#293136"
+set inputbar-fg "#d3c6aa"
+
+set index-bg "#293136"
+set index-fg "#d3c6aa"
+set index-active-bg "#a7c080"
+set index-active-fg "#2b3339"
+
+set completion-bg "#293136"
+set completion-fg "#d3c6aa"
+set completion-group-bg "#293136"
+set completion-group-fg "#7fbbb3"
+set completion-highlight-bg "#a7c080"
+set completion-highlight-fg "#2b3339"
+
+set notification-bg "#293136"
+set notification-fg "#d3c6aa"
+set notification-error-bg "#e68183"
+set notification-error-fg "#2b3339"
+set notification-warning-bg "#e68183"
+set notification-warning-fg "#2b3339"
+
+set highlight-color "#a7c080"
+set highlight-active-color "#7fbbb3"
+set highlight-transparency 0.35
+map <A-n> set nohlsearch
+
+set recolor-lightcolor "#293136"
+set recolor-darkcolor "#d3c6aa"
+set recolor-keephue "true"
+set recolor "true"
+
+set render-loading-bg "#293136"
+set render-loading-fg "#d3c6aa"
+
+set selection-clipboard clipboard
+set window-title-home-tilde true
