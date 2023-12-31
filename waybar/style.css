@@ -6,41 +6,42 @@
     font-size: 16px;
     min-height: 0;
 }
+@import "/home/karuto/.config/wal/colorschemes/dark/colors-waybar.css";
 
 window#waybar {
     border-radius: 0px;
-    background: #293136;
-    color: #9da9a0;
+    background: @background;
+    color: @cursor;
 }
 
 tooltip {
-    background: #293136;
+    background: @background;
     border-radius: 0px;
 }
 
 #workspaces button {
     padding: 5px;
-    color: #313244;
+    color: @background;
     margin-right: 5px;
 }
 
 #workspaces button.active {
-    color: #859289;
+    color: @color1;
 }
 
 #workspaces button.focused {
-    color: #859289;
-    background: #293136;
+    color: @color1;
+    background: @background;
 }
 
 #workspaces button.urgent {
     color: #11111b;
-    background: #293136;
+    background: @background;
 }
 
 #workspaces button:hover {
-    background: #293136;
-    color: #9da9a0;
+    background: @background;
+    color: @cursor;
 }
 
 #window,
@@ -83,20 +84,20 @@ tooltip {
 
 #clock {
     margin-left: 5px;
-    color: #fab387;
+    color: @color9;
 }
 
 #network {
-    color: #9da9a0;
+    color: @cursor;
 }
 
 #bluetooth {
-    color: #9da9a0;
+    color: @cursor;
     margin-right: 10px
 } 
 
 #pulseaudio {
-    color: #9da9a0;
+    color: @cursor;
 }
 
 #pulseaudio.microphone {

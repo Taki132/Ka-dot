@@ -1,5 +1,5 @@
 import:
-  - ~/.config/alacritty/color.yml
+  - ~/.config/wal/colorschemes/dark/colors.yml
   - ~/.config/alacritty/fonts.yml
   - ~/.config/alacritty/config.yml
   

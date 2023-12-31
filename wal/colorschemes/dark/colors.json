@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/karuto/.config/wallpaper/clay-banks-u27Rrbs9Dwc-unsplash.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#121312",
+        "foreground": "#d0cecc",
+        "cursor": "#d0cecc"
+    },
+    "colors": {
+        "color0": "#121312",
+        "color1": "#6D7370",
+        "color2": "#7D8079",
+        "color3": "#86847B",
+        "color4": "#7A8484",
+        "color5": "#8F928F",
+        "color6": "#A5A19A",
+        "color7": "#d0cecc",
+        "color8": "#91908e",
+        "color9": "#6D7370",
+        "color10": "#7D8079",
+        "color11": "#86847B",
+        "color12": "#7A8484",
+        "color13": "#8F928F",
+        "color14": "#A5A19A",
+        "color15": "#d0cecc"
+    }
+}
