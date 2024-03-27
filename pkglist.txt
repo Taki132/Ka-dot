@@ -1,0 +1,17 @@
+hyprland
+hyprpaper
+grimblast-git
+alacritty
+swaylock
+rofi-lbonn-wayland
+waybar
+cliphist
+i3-gnome-pomodoro-git
+fcitx5
+fcitx5-bamboo
+wlsunset
+dunst
+nwg-bar-bin
+nwg-look-bin
+zathura
+
